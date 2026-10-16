@@ -1,0 +1,12 @@
+# Emergency Dispatch QAOA - Pinned Dependencies
+# Environment: Python 3.11 / IBM Qiskit Fall Fest 2026
+qiskit==2.4.1
+qiskit-aer==0.17.2
+qiskit-optimization==0.7.0
+docplex==2.32.264
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.5
+matplotlib==3.10.9
+networkx==3.6.1
+pytest==9.1.1
