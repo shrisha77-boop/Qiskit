@@ -75,7 +75,7 @@ Measure → decode → select best feasible bitstring
 
 ![QAOA Circuit](figures/qaoa_circuit.png)
 
-*Figure: QAOA ansatz circuit (p=2), Qiskit Statevector Simulator.*
+*Figure: QAOA ansatz circuit (p=2) — 3-qubit illustrative circuit for visualization (the full 3×3 dispatch problem uses 9 qubits). Qiskit Statevector Simulator.*
 
 - **Optimizer:** COBYLA with 3–5 random restarts per instance
 - **Depth:** p = 1, 2, with warm-start between layers
@@ -86,18 +86,13 @@ Measure → decode → select best feasible bitstring
 ## Quick Start
 
 ```bash
-git clone <repo-url>
-cd dispatch-qaoa
+cd Qiskit
 python -m venv .venv
 .venv\Scripts\activate        # Windows
 # source .venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
+python run_all.py --quick     # quick run (~30 sec)
 python run_all.py             # regenerates all figures and tables (~10 min)
-```
-
-**Quick mode** (classical solvers only, ~2 min):
-```bash
-python run_all.py --quick
 ```
 
 **Launch interactive Streamlit dashboard:**
@@ -116,7 +111,7 @@ pytest tests/ -v
 ## Repository Map
 
 ```
-dispatch-qaoa/
+Qiskit/
 ├── README.md
 ├── requirements.txt
 ├── run_all.py               ← one command to reproduce everything
@@ -156,21 +151,21 @@ dispatch-qaoa/
 
 ![Approx Ratio](figures/approx_ratio_comparison.png)
 
-| Solver | Mean Approx Ratio | Notes |
-|--------|:-----------------:|-------|
-| Hungarian (Exact) | **1.000** | Global optimum — always wins |
-| Simulated Annealing | ~1.001 | Nearly always finds optimum |
-| Severity-First Greedy | ~1.05–1.15 | Good heuristic |
-| CVaR-QAOA (p=2) | ~1.10–1.40 | Improves over p=1 |
-| QAOA (p=2) | ~1.15–1.50 | Better with more layers |
-| QAOA (p=1) | ~1.30–1.80 | Single layer struggles |
-| Nearest-Vehicle Greedy | ~1.50–2.50 | Worst — ignores severity |
+| Solver | Mean Approx Ratio | Optimal Hit % | Feasibility % | Notes |
+|--------|:-----------------:|:-------------:|:-------------:|-------|
+| Hungarian (Exact) | **1.0000** | 100.0% | 100.0% | Global optimum (ground truth baseline) |
+| Severity-First Greedy | **1.0227** | 70.0% | 100.0% | Strong classical heuristic |
+| CVaR-QAOA (p=2, α=0.2) | **1.0441** | 1.46% | 7.08% | Best quantum variant (tail energy optimization) |
+| QAOA (p=1) | **1.0655** | 0.39% | 3.46% | Average approx ratio slightly lower than p=2 |
+| QAOA (p=2) | **1.0768** | 1.16% | 4.19% | Triples optimal-hit probability over p=1 (0.39% → 1.16%) |
+| Nearest-Vehicle Greedy | **1.1830** | 46.7% | 100.0% | Suboptimal — ignores incident severity weights |
+| Simulated Annealing (QUBO) | **1.2647** | 36.7% | 100.0% | Worst solver — trapped in QUBO penalty landscape |
 
 ### QAOA Probability Distribution
 
 ![QAOA p=2 Probs](figures/qaoa_p2_probs.png)
 
-*Figure: Measurement probability over all 512 bitstrings (9-qubit, p=2). Green = optimal assignment, Blue = feasible suboptimal, Gray = infeasible. Qiskit Statevector Simulator.*
+*Figure: Top ~12 sampled bitstrings from QAOA (9-qubit, p=2, 4096 shots). Gray bars indicate infeasible bitstrings (the standard unconstrained X-mixer explores all 2⁹ Hilbert states; optimal feasible assignments reside in the distribution tail with ~1.16% probability). Qiskit Statevector Simulator.*
 
 ### QAOA Optimal-Hit Probability & Feasibility Rate
 
@@ -180,7 +175,7 @@ dispatch-qaoa/
 
 ![Dynamic Sim](figures/dynamic_dispatch_cumulative.png)
 
-*Figure: Cumulative severity-weighted delay over 10 time windows. Hungarian solves each window exactly; QAOA lags but improves with p=2.*
+*Figure: Cumulative severity-weighted delay over rolling time windows. Each solver makes local assignments per window; because myopic per-window assignments relocate ambulances differently for future call arrivals, long-term trajectories vary (QAOA and Severity-First finished at 487.5 cumulative delay vs. Hungarian's 532.9 and Nearest-Vehicle's 520.0). Qiskit Statevector Simulator.*
 
 ---
 
@@ -209,11 +204,12 @@ dispatch-qaoa/
 | `QAOAAnsatz`, `SparsePauliOp`, `StatevectorEstimator`, primitives | Qiskit (IBM Quantum) |
 | `linear_sum_assignment` (Hungarian) | SciPy |
 | COBYLA optimizer | SciPy |
-| QUBO construction & validation | Written by team |
-| Ising conversion (manual numpy + cross-check) | Written by team |
-| Simulated annealing (QUBO, geometric cooling) | Written by team |
-| Greedy dispatch heuristics | Written by team |
-| Benchmark harness, penalty sweep, dynamic simulation | Written by team |
+| QUBO construction & validation | Written by Shrisha |
+| Ising conversion (manual numpy + cross-check) | Written by Shrisha |
+| Simulated annealing (QUBO, geometric cooling) | Written by Shrisha |
+| Greedy dispatch heuristics | Written by Shrisha |
+| Benchmark harness, penalty sweep, dynamic simulation | Written by Shrisha |
+| Interactive Streamlit dashboard & visualization | Written by Shrisha |
 | CVaR objective implementation | Adapted from Barkoutsos et al. (2020) |
 
 ---
@@ -230,6 +226,13 @@ dispatch-qaoa/
 
 ## Team
 
-> *IBM Qiskit Fall Fest 2026 — RV University*
+- **Shrisha** — Solo Developer
+  - Mathematical modeling & severity weighting
+  - QUBO formulation, penalty weight tuning, and Ising Hamiltonian mapping
+  - QAOA & CVaR-QAOA implementation using Qiskit primitives and COBYLA optimization
+  - Classical baseline implementations (Hungarian algorithm, Greedy heuristics, Simulated Annealing)
+  - Benchmarking harness, penalty sweep, and dynamic rolling-horizon simulation
+  - Interactive Streamlit visualization dashboard, test suite, and documentation
+- *IBM Qiskit Fall Fest 2026 — RV University*
 
 **Future Work:** XY-mixer to preserve feasibility constraints, Grover mixer, noise-model simulation, real IBM hardware run, decomposition for larger fleets, multi-routing VRP extensions.
