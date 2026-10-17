@@ -100,6 +100,12 @@ python run_all.py             # regenerates all figures and tables (~10 min)
 python run_all.py --quick
 ```
 
+**Launch interactive Streamlit dashboard:**
+```bash
+python -m streamlit run frontend/app.py
+```
+*Open [http://localhost:8501](http://localhost:8501) in your browser.*
+
 **Run just the tests:**
 ```bash
 pytest tests/ -v
@@ -124,6 +130,10 @@ dispatch-qaoa/
 │   ├── greedy.py            ← solve_nearest_vehicle(), solve_severity_first_greedy()
 │   ├── sa.py                ← solve_simulated_annealing() (QUBO, geometric cooling)
 │   └── qaoa.py              ← run_qaoa() with CVaR option, circuit diagram, plots
+├── frontend/
+│   ├── app.py               ← Interactive Streamlit dashboard (Dark Theme)
+│   ├── components/          ← Tab views: Scenario, Assignments, Comparison, Quantum Lab
+│   └── services/            ← dispatch_service.py bridge to backend solvers
 ├── experiments/
 │   ├── benchmark.py         ← run_benchmarks() → results/benchmark.csv
 │   ├── penalty_sweep.py     ← penalty P sensitivity analysis
