@@ -47,7 +47,7 @@ H(x) = Σ c[v,i] x[v,i]
       + P · Σ_i (Σ_v x[v,i] - 1)²     ← each incident served exactly once
 ```
 
-- Penalty weight `P = 1.5 × max(c)` ensures infeasible states always cost more than feasible ones.
+- Penalty weight `P = 1.5 × max(c)` is chosen to make infeasible states costlier than feasible ones; the QUBO minimum was verified to be feasible on every test instance.
 - Expanded into an N²×N² matrix Q so `H(x) = xᵀQx + offset`.
 - **Validated:** brute-force minimum of Q equals the Hungarian algorithm optimum on every test instance.
 
@@ -77,8 +77,8 @@ Measure → decode → select best feasible bitstring
 
 *Figure: QAOA ansatz circuit (p=2) — 3-qubit illustrative circuit for visualization (the full 3×3 dispatch problem uses 9 qubits). Qiskit Statevector Simulator.*
 
-- **Optimizer:** COBYLA with 3–5 random restarts per instance
-- **Depth:** p = 1, 2, with warm-start between layers
+- **Optimizer:** COBYLA with 1–3 random restarts per instance (2 for the 3×3 benchmark, 1 for 4×4, 3 for the showcase run)
+- **Depth:** p = 1, 2 (random initial parameters; warm-starting is listed under Future Work)
 - **CVaR variant:** optimizes the mean of the best α=20% fraction of samples
 
 ---
@@ -86,12 +86,13 @@ Measure → decode → select best feasible bitstring
 ## Quick Start
 
 ```bash
-cd Qiskit
+git clone https://github.com/shrisha77-boop/Severity-Aware-Emergency-Dispatch-Using-QAOA.git
+cd Severity-Aware-Emergency-Dispatch-Using-QAOA
 python -m venv .venv
 .venv\Scripts\activate        # Windows
 # source .venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
-python run_all.py --quick     # quick run (~30 sec)
+python run_all.py --quick     # quick run (~30 sec); overwrites the CSVs in results/ with a smaller run
 python run_all.py             # regenerates all figures and tables (~10 min)
 ```
 
@@ -111,7 +112,7 @@ pytest tests/ -v
 ## Repository Map
 
 ```
-Qiskit/
+Severity-Aware-Emergency-Dispatch-Using-QAOA/
 ├── README.md
 ├── requirements.txt
 ├── run_all.py               ← one command to reproduce everything
@@ -138,7 +139,7 @@ Qiskit/
 ├── notebooks/
 │   └── walkthrough.ipynb    ← step-by-step interactive demo
 └── tests/
-    └── test_qubo.py         ← QUBO min == Hungarian on 50 random instances
+    └── test_qubo.py         ← QUBO min == Hungarian on 20 random instances
 ```
 
 ---
@@ -165,7 +166,7 @@ Qiskit/
 
 ![QAOA p=2 Probs](figures/qaoa_p2_probs.png)
 
-*Figure: Top ~12 sampled bitstrings from QAOA (9-qubit, p=2, 4096 shots). Gray bars indicate infeasible bitstrings (the standard unconstrained X-mixer explores all 2⁹ Hilbert states; optimal feasible assignments reside in the distribution tail with ~1.16% probability). Qiskit Statevector Simulator.*
+*Figure: Top ~12 sampled bitstrings from QAOA (9-qubit, p=2, 4096 shots). Gray bars indicate infeasible bitstrings (the standard unconstrained X-mixer explores all 2⁹ Hilbert states; optimal feasible assignments reside in the distribution tail; mean optimal-hit probability is ~1.16% across 30 instances, ~0.58% for the plotted instance). Qiskit Statevector Simulator.*
 
 ### QAOA Optimal-Hit Probability & Feasibility Rate
 
@@ -175,7 +176,7 @@ Qiskit/
 
 ![Dynamic Sim](figures/dynamic_dispatch_cumulative.png)
 
-*Figure: Cumulative severity-weighted delay over rolling time windows. Each solver makes local assignments per window; because myopic per-window assignments relocate ambulances differently for future call arrivals, long-term trajectories vary (QAOA and Severity-First finished at 487.5 cumulative delay vs. Hungarian's 532.9 and Nearest-Vehicle's 520.0). Qiskit Statevector Simulator.*
+*Figure: Cumulative severity-weighted delay over rolling time windows. Each solver makes local assignments per window; likely because myopic per-window assignments relocate ambulances differently for future call arrivals, long-term trajectories vary (QAOA and Severity-First finished at 487.5 cumulative delay vs. Hungarian's 532.9 and Nearest-Vehicle's 520.0). Qiskit Statevector Simulator.*
 
 ---
 
@@ -235,4 +236,4 @@ Qiskit/
   - Interactive Streamlit visualization dashboard, test suite, and documentation
 - *IBM Qiskit Fall Fest 2026 — RV University*
 
-**Future Work:** XY-mixer to preserve feasibility constraints, Grover mixer, noise-model simulation, real IBM hardware run, decomposition for larger fleets, multi-routing VRP extensions.
+**Future Work:** warm-starting QAOA layers, XY-mixer to preserve feasibility constraints, Grover mixer, noise-model simulation, real IBM hardware run, decomposition for larger fleets, multi-routing VRP extensions.
