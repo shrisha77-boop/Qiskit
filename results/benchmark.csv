@@ -1,141 +1,234 @@
 instance_id,size,N,solver,cost,optimal_cost,approx_ratio,is_feasible,optimal_hit_prob,feasibility_rate,runtime_sec
 0,3x3 (9 qubits),3,Hungarian (Exact),48.7,48.7,1.0,True,1.0,1.0,2e-05
-0,3x3 (9 qubits),3,Nearest-Vehicle Greedy,48.7,48.7,1.0,True,1.0,1.0,5e-05
-0,3x3 (9 qubits),3,Severity-First Greedy,48.7,48.7,1.0,True,1.0,1.0,5e-05
-0,3x3 (9 qubits),3,Simulated Annealing (QUBO),52.44,48.7,1.0768,True,0.0,1.0,0.1077
-1,3x3 (9 qubits),3,Hungarian (Exact),20.08,20.08,1.0,True,1.0,1.0,3e-05
-1,3x3 (9 qubits),3,Nearest-Vehicle Greedy,47.83,20.08,2.382,True,0.0,1.0,6e-05
+0,3x3 (9 qubits),3,Nearest-Vehicle Greedy,48.7,48.7,1.0,True,1.0,1.0,4e-05
+0,3x3 (9 qubits),3,Severity-First Greedy,48.7,48.7,1.0,True,1.0,1.0,4e-05
+0,3x3 (9 qubits),3,Simulated Annealing (QUBO),52.44,48.7,1.0768,True,0.0,1.0,0.0797
+0,3x3 (9 qubits),3,QAOA (p=1),48.7,48.7,1.0,True,0.00841,0.01788,0.4757
+0,3x3 (9 qubits),3,QAOA (p=2),48.7,48.7,1.0,True,0.01406,0.03004,0.6914
+0,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",48.7,48.7,1.0,True,0.00371,0.02181,0.8037
+1,3x3 (9 qubits),3,Hungarian (Exact),20.08,20.08,1.0,True,1.0,1.0,2e-05
+1,3x3 (9 qubits),3,Nearest-Vehicle Greedy,47.83,20.08,2.382,True,0.0,1.0,4e-05
 1,3x3 (9 qubits),3,Severity-First Greedy,20.08,20.08,1.0,True,1.0,1.0,5e-05
-1,3x3 (9 qubits),3,Simulated Annealing (QUBO),20.08,20.08,1.0,True,1.0,1.0,0.109
-2,3x3 (9 qubits),3,Hungarian (Exact),102.4,102.4,1.0,True,1.0,1.0,3e-05
-2,3x3 (9 qubits),3,Nearest-Vehicle Greedy,102.4,102.4,1.0,True,1.0,1.0,4e-05
-2,3x3 (9 qubits),3,Severity-First Greedy,102.4,102.4,1.0,True,1.0,1.0,5e-05
-2,3x3 (9 qubits),3,Simulated Annealing (QUBO),256.4,102.4,2.5039,True,0.0,1.0,0.1156
-3,3x3 (9 qubits),3,Hungarian (Exact),25.61,25.61,1.0,True,1.0,1.0,4e-05
-3,3x3 (9 qubits),3,Nearest-Vehicle Greedy,26.59,25.61,1.0383,True,0.0,1.0,4e-05
-3,3x3 (9 qubits),3,Severity-First Greedy,26.59,25.61,1.0383,True,0.0,1.0,5e-05
-3,3x3 (9 qubits),3,Simulated Annealing (QUBO),33.58,25.61,1.3112,True,0.0,1.0,0.1201
-4,3x3 (9 qubits),3,Hungarian (Exact),132.95999999999998,132.95999999999998,1.0,True,1.0,1.0,3e-05
-4,3x3 (9 qubits),3,Nearest-Vehicle Greedy,132.96,132.95999999999998,1.0,True,1.0,1.0,4e-05
-4,3x3 (9 qubits),3,Severity-First Greedy,184.24,132.95999999999998,1.3857,True,0.0,1.0,5e-05
-4,3x3 (9 qubits),3,Simulated Annealing (QUBO),154.88,132.95999999999998,1.1649,True,0.0,1.0,0.1119
-5,3x3 (9 qubits),3,Hungarian (Exact),23.54,23.54,1.0,True,1.0,1.0,4e-05
+1,3x3 (9 qubits),3,Simulated Annealing (QUBO),20.08,20.08,1.0,True,1.0,1.0,0.0769
+1,3x3 (9 qubits),3,QAOA (p=1),35.84,20.08,1.7849,True,4e-05,0.05218,0.3013
+1,3x3 (9 qubits),3,QAOA (p=2),20.08,20.08,1.0,True,0.00401,0.02492,0.7967
+1,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",20.08,20.08,1.0,True,0.00525,0.20566,0.9648
+2,3x3 (9 qubits),3,Hungarian (Exact),102.4,102.4,1.0,True,1.0,1.0,2e-05
+2,3x3 (9 qubits),3,Nearest-Vehicle Greedy,102.4,102.4,1.0,True,1.0,1.0,3e-05
+2,3x3 (9 qubits),3,Severity-First Greedy,102.4,102.4,1.0,True,1.0,1.0,3e-05
+2,3x3 (9 qubits),3,Simulated Annealing (QUBO),256.4,102.4,2.5039,True,0.0,1.0,0.078
+2,3x3 (9 qubits),3,QAOA (p=1),128.4,102.4,1.2539,True,2e-05,0.01883,0.3269
+2,3x3 (9 qubits),3,QAOA (p=2),102.4,102.4,1.0,True,0.00357,0.01721,0.8616
+2,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",102.4,102.4,1.0,True,0.00061,0.03908,0.7843
+3,3x3 (9 qubits),3,Hungarian (Exact),25.61,25.61,1.0,True,1.0,1.0,2e-05
+3,3x3 (9 qubits),3,Nearest-Vehicle Greedy,26.59,25.61,1.0383,True,0.0,1.0,3e-05
+3,3x3 (9 qubits),3,Severity-First Greedy,26.59,25.61,1.0383,True,0.0,1.0,3e-05
+3,3x3 (9 qubits),3,Simulated Annealing (QUBO),33.58,25.61,1.3112,True,0.0,1.0,0.0774
+3,3x3 (9 qubits),3,QAOA (p=1),25.61,25.61,1.0,True,0.00245,0.10036,0.4651
+3,3x3 (9 qubits),3,QAOA (p=2),25.61,25.61,1.0,True,0.00762,0.02284,1.0244
+3,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",25.61,25.61,1.0,True,0.01161,0.0645,0.9679
+4,3x3 (9 qubits),3,Hungarian (Exact),132.95999999999998,132.95999999999998,1.0,True,1.0,1.0,2e-05
+4,3x3 (9 qubits),3,Nearest-Vehicle Greedy,132.96,132.95999999999998,1.0,True,1.0,1.0,3e-05
+4,3x3 (9 qubits),3,Severity-First Greedy,184.24,132.95999999999998,1.3857,True,0.0,1.0,4e-05
+4,3x3 (9 qubits),3,Simulated Annealing (QUBO),154.88,132.95999999999998,1.1649,True,0.0,1.0,0.0744
+4,3x3 (9 qubits),3,QAOA (p=1),132.96,132.95999999999998,1.0,True,0.00177,0.01452,0.3444
+4,3x3 (9 qubits),3,QAOA (p=2),154.88,132.95999999999998,1.1649,True,0.00019,0.0273,0.7711
+4,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",132.96,132.95999999999998,1.0,True,0.01837,0.05461,0.7224
+5,3x3 (9 qubits),3,Hungarian (Exact),23.54,23.54,1.0,True,1.0,1.0,2e-05
 5,3x3 (9 qubits),3,Nearest-Vehicle Greedy,27.56,23.54,1.1708,True,0.0,1.0,4e-05
-5,3x3 (9 qubits),3,Severity-First Greedy,27.56,23.54,1.1708,True,0.0,1.0,5e-05
-5,3x3 (9 qubits),3,Simulated Annealing (QUBO),23.54,23.54,1.0,True,1.0,1.0,0.1242
-6,3x3 (9 qubits),3,Hungarian (Exact),100.49,100.49,1.0,True,1.0,1.0,3e-05
-6,3x3 (9 qubits),3,Nearest-Vehicle Greedy,108.74,100.49,1.0821,True,0.0,1.0,5e-05
-6,3x3 (9 qubits),3,Severity-First Greedy,100.49,100.49,1.0,True,1.0,1.0,6e-05
-6,3x3 (9 qubits),3,Simulated Annealing (QUBO),108.74,100.49,1.0821,True,0.0,1.0,0.1099
-7,3x3 (9 qubits),3,Hungarian (Exact),61.300000000000004,61.300000000000004,1.0,True,1.0,1.0,3e-05
-7,3x3 (9 qubits),3,Nearest-Vehicle Greedy,61.3,61.300000000000004,1.0,True,1.0,1.0,4e-05
-7,3x3 (9 qubits),3,Severity-First Greedy,61.3,61.300000000000004,1.0,True,1.0,1.0,5e-05
-7,3x3 (9 qubits),3,Simulated Annealing (QUBO),135.22,61.300000000000004,2.2059,True,0.0,1.0,0.1116
-8,3x3 (9 qubits),3,Hungarian (Exact),54.7,54.7,1.0,True,1.0,1.0,3e-05
-8,3x3 (9 qubits),3,Nearest-Vehicle Greedy,60.58,54.7,1.1075,True,0.0,1.0,6e-05
-8,3x3 (9 qubits),3,Severity-First Greedy,56.7,54.7,1.0366,True,0.0,1.0,5e-05
-8,3x3 (9 qubits),3,Simulated Annealing (QUBO),54.7,54.7,1.0,True,1.0,1.0,0.1168
-9,3x3 (9 qubits),3,Hungarian (Exact),85.86,85.86,1.0,True,1.0,1.0,4e-05
-9,3x3 (9 qubits),3,Nearest-Vehicle Greedy,135.94,85.86,1.5833,True,0.0,1.0,4e-05
-9,3x3 (9 qubits),3,Severity-First Greedy,85.86,85.86,1.0,True,1.0,1.0,5e-05
-9,3x3 (9 qubits),3,Simulated Annealing (QUBO),127.56,85.86,1.4857,True,0.0,1.0,0.1159
-10,3x3 (9 qubits),3,Hungarian (Exact),118.97,118.97,1.0,True,1.0,1.0,3e-05
-10,3x3 (9 qubits),3,Nearest-Vehicle Greedy,149.72,118.97,1.2585,True,0.0,1.0,4e-05
-10,3x3 (9 qubits),3,Severity-First Greedy,118.97,118.97,1.0,True,1.0,1.0,5e-05
-10,3x3 (9 qubits),3,Simulated Annealing (QUBO),217.95,118.97,1.832,True,0.0,1.0,0.1147
-11,3x3 (9 qubits),3,Hungarian (Exact),97.49000000000001,97.49000000000001,1.0,True,1.0,1.0,3e-05
-11,3x3 (9 qubits),3,Nearest-Vehicle Greedy,193.57,97.49000000000001,1.9855,True,0.0,1.0,4e-05
-11,3x3 (9 qubits),3,Severity-First Greedy,97.49,97.49000000000001,1.0,True,1.0,1.0,5e-05
-11,3x3 (9 qubits),3,Simulated Annealing (QUBO),154.12,97.49000000000001,1.5809,True,0.0,1.0,0.1195
-12,3x3 (9 qubits),3,Hungarian (Exact),110.56,110.56,1.0,True,1.0,1.0,3e-05
-12,3x3 (9 qubits),3,Nearest-Vehicle Greedy,110.56,110.56,1.0,True,1.0,1.0,5e-05
-12,3x3 (9 qubits),3,Severity-First Greedy,110.56,110.56,1.0,True,1.0,1.0,6e-05
-12,3x3 (9 qubits),3,Simulated Annealing (QUBO),112.32,110.56,1.0159,True,0.0,1.0,0.1207
-13,3x3 (9 qubits),3,Hungarian (Exact),39.379999999999995,39.379999999999995,1.0,True,1.0,1.0,3e-05
-13,3x3 (9 qubits),3,Nearest-Vehicle Greedy,39.38,39.379999999999995,1.0,True,1.0,1.0,4e-05
-13,3x3 (9 qubits),3,Severity-First Greedy,39.38,39.379999999999995,1.0,True,1.0,1.0,4e-05
-13,3x3 (9 qubits),3,Simulated Annealing (QUBO),47.86,39.379999999999995,1.2153,True,0.0,1.0,0.112
-14,3x3 (9 qubits),3,Hungarian (Exact),93.75999999999999,93.75999999999999,1.0,True,1.0,1.0,3e-05
-14,3x3 (9 qubits),3,Nearest-Vehicle Greedy,98.96,93.75999999999999,1.0555,True,0.0,1.0,4e-05
-14,3x3 (9 qubits),3,Severity-First Greedy,93.76,93.75999999999999,1.0,True,1.0,1.0,4e-05
-14,3x3 (9 qubits),3,Simulated Annealing (QUBO),147.04,93.75999999999999,1.5683,True,0.0,1.0,0.1088
-15,3x3 (9 qubits),3,Hungarian (Exact),66.71,66.71,1.0,True,1.0,1.0,3e-05
-15,3x3 (9 qubits),3,Nearest-Vehicle Greedy,67.47,66.71,1.0114,True,0.0,1.0,5e-05
+5,3x3 (9 qubits),3,Severity-First Greedy,27.56,23.54,1.1708,True,0.0,1.0,4e-05
+5,3x3 (9 qubits),3,Simulated Annealing (QUBO),23.54,23.54,1.0,True,1.0,1.0,0.0842
+5,3x3 (9 qubits),3,QAOA (p=1),23.54,23.54,1.0,True,0.01156,0.05657,0.5694
+5,3x3 (9 qubits),3,QAOA (p=2),23.54,23.54,1.0,True,0.00539,0.02812,0.9962
+5,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",23.54,23.54,1.0,True,0.00819,0.01574,0.9637
+6,3x3 (9 qubits),3,Hungarian (Exact),100.49,100.49,1.0,True,1.0,1.0,2e-05
+6,3x3 (9 qubits),3,Nearest-Vehicle Greedy,108.74,100.49,1.0821,True,0.0,1.0,4e-05
+6,3x3 (9 qubits),3,Severity-First Greedy,100.49,100.49,1.0,True,1.0,1.0,3e-05
+6,3x3 (9 qubits),3,Simulated Annealing (QUBO),108.74,100.49,1.0821,True,0.0,1.0,0.08
+6,3x3 (9 qubits),3,QAOA (p=1),100.49,100.49,1.0,True,0.0001,0.02175,0.3184
+6,3x3 (9 qubits),3,QAOA (p=2),100.49,100.49,1.0,True,0.00115,0.04879,0.6399
+6,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",101.97,100.49,1.0147,True,9e-05,0.07428,0.8452
+7,3x3 (9 qubits),3,Hungarian (Exact),61.300000000000004,61.300000000000004,1.0,True,1.0,1.0,2e-05
+7,3x3 (9 qubits),3,Nearest-Vehicle Greedy,61.3,61.300000000000004,1.0,True,1.0,1.0,3e-05
+7,3x3 (9 qubits),3,Severity-First Greedy,61.3,61.300000000000004,1.0,True,1.0,1.0,3e-05
+7,3x3 (9 qubits),3,Simulated Annealing (QUBO),135.22,61.300000000000004,2.2059,True,0.0,1.0,0.0751
+7,3x3 (9 qubits),3,QAOA (p=1),61.3,61.300000000000004,1.0,True,0.05989,0.09541,0.3683
+7,3x3 (9 qubits),3,QAOA (p=2),61.3,61.300000000000004,1.0,True,0.00384,0.01661,0.9186
+7,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",61.3,61.300000000000004,1.0,True,0.00059,0.02436,0.7902
+8,3x3 (9 qubits),3,Hungarian (Exact),54.7,54.7,1.0,True,1.0,1.0,2e-05
+8,3x3 (9 qubits),3,Nearest-Vehicle Greedy,60.58,54.7,1.1075,True,0.0,1.0,3e-05
+8,3x3 (9 qubits),3,Severity-First Greedy,56.7,54.7,1.0366,True,0.0,1.0,4e-05
+8,3x3 (9 qubits),3,Simulated Annealing (QUBO),54.7,54.7,1.0,True,1.0,1.0,0.0791
+8,3x3 (9 qubits),3,QAOA (p=1),54.7,54.7,1.0,True,0.00124,0.03398,0.4893
+8,3x3 (9 qubits),3,QAOA (p=2),56.7,54.7,1.0366,True,0.0,0.00199,0.85
+8,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",54.7,54.7,1.0,True,0.03168,0.04383,0.8064
+9,3x3 (9 qubits),3,Hungarian (Exact),85.86,85.86,1.0,True,1.0,1.0,2e-05
+9,3x3 (9 qubits),3,Nearest-Vehicle Greedy,135.94,85.86,1.5833,True,0.0,1.0,3e-05
+9,3x3 (9 qubits),3,Severity-First Greedy,85.86,85.86,1.0,True,1.0,1.0,3e-05
+9,3x3 (9 qubits),3,Simulated Annealing (QUBO),127.56,85.86,1.4857,True,0.0,1.0,0.0786
+9,3x3 (9 qubits),3,QAOA (p=1),135.94,85.86,1.5833,True,0.0001,0.01259,0.2983
+9,3x3 (9 qubits),3,QAOA (p=2),135.94,85.86,1.5833,True,0.00015,0.02724,0.8687
+9,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",127.56,85.86,1.4857,True,0.00036,0.04247,0.763
+10,3x3 (9 qubits),3,Hungarian (Exact),118.97,118.97,1.0,True,1.0,1.0,4e-05
+10,3x3 (9 qubits),3,Nearest-Vehicle Greedy,149.72,118.97,1.2585,True,0.0,1.0,7e-05
+10,3x3 (9 qubits),3,Severity-First Greedy,118.97,118.97,1.0,True,1.0,1.0,7e-05
+10,3x3 (9 qubits),3,Simulated Annealing (QUBO),217.95,118.97,1.832,True,0.0,1.0,0.0811
+10,3x3 (9 qubits),3,QAOA (p=1),149.72,118.97,1.2585,True,3e-05,0.04211,0.2975
+10,3x3 (9 qubits),3,QAOA (p=2),118.97,118.97,1.0,True,0.00013,0.04509,0.6454
+10,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",118.97,118.97,1.0,True,0.00436,0.11449,0.6133
+11,3x3 (9 qubits),3,Hungarian (Exact),97.49000000000001,97.49000000000001,1.0,True,1.0,1.0,2e-05
+11,3x3 (9 qubits),3,Nearest-Vehicle Greedy,193.57,97.49000000000001,1.9855,True,0.0,1.0,3e-05
+11,3x3 (9 qubits),3,Severity-First Greedy,97.49,97.49000000000001,1.0,True,1.0,1.0,4e-05
+11,3x3 (9 qubits),3,Simulated Annealing (QUBO),154.12,97.49000000000001,1.5809,True,0.0,1.0,0.0758
+11,3x3 (9 qubits),3,QAOA (p=1),97.49,97.49000000000001,1.0,True,0.00948,0.03651,0.3284
+11,3x3 (9 qubits),3,QAOA (p=2),97.49,97.49000000000001,1.0,True,0.00206,0.01283,0.6536
+11,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",97.49,97.49000000000001,1.0,True,0.00899,0.04629,0.7372
+12,3x3 (9 qubits),3,Hungarian (Exact),110.56,110.56,1.0,True,1.0,1.0,2e-05
+12,3x3 (9 qubits),3,Nearest-Vehicle Greedy,110.56,110.56,1.0,True,1.0,1.0,3e-05
+12,3x3 (9 qubits),3,Severity-First Greedy,110.56,110.56,1.0,True,1.0,1.0,3e-05
+12,3x3 (9 qubits),3,Simulated Annealing (QUBO),112.32,110.56,1.0159,True,0.0,1.0,0.0755
+12,3x3 (9 qubits),3,QAOA (p=1),110.56,110.56,1.0,True,0.00254,0.03751,0.3034
+12,3x3 (9 qubits),3,QAOA (p=2),110.56,110.56,1.0,True,0.04358,0.07487,0.72
+12,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",110.56,110.56,1.0,True,0.00044,0.07061,0.7728
+13,3x3 (9 qubits),3,Hungarian (Exact),39.379999999999995,39.379999999999995,1.0,True,1.0,1.0,2e-05
+13,3x3 (9 qubits),3,Nearest-Vehicle Greedy,39.38,39.379999999999995,1.0,True,1.0,1.0,3e-05
+13,3x3 (9 qubits),3,Severity-First Greedy,39.38,39.379999999999995,1.0,True,1.0,1.0,3e-05
+13,3x3 (9 qubits),3,Simulated Annealing (QUBO),47.86,39.379999999999995,1.2153,True,0.0,1.0,0.0798
+13,3x3 (9 qubits),3,QAOA (p=1),39.38,39.379999999999995,1.0,True,0.003,0.06548,0.368
+13,3x3 (9 qubits),3,QAOA (p=2),39.38,39.379999999999995,1.0,True,0.00072,0.0532,0.9088
+13,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",39.38,39.379999999999995,1.0,True,0.01731,0.11199,0.7979
+14,3x3 (9 qubits),3,Hungarian (Exact),93.75999999999999,93.75999999999999,1.0,True,1.0,1.0,2e-05
+14,3x3 (9 qubits),3,Nearest-Vehicle Greedy,98.96,93.75999999999999,1.0555,True,0.0,1.0,3e-05
+14,3x3 (9 qubits),3,Severity-First Greedy,93.76,93.75999999999999,1.0,True,1.0,1.0,3e-05
+14,3x3 (9 qubits),3,Simulated Annealing (QUBO),147.04,93.75999999999999,1.5683,True,0.0,1.0,0.0866
+14,3x3 (9 qubits),3,QAOA (p=1),98.8,93.75999999999999,1.0538,True,0.0,0.00603,0.3786
+14,3x3 (9 qubits),3,QAOA (p=2),93.76,93.75999999999999,1.0,True,0.20096,0.20542,0.782
+14,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",93.76,93.75999999999999,1.0,True,0.20061,0.20585,0.7625
+15,3x3 (9 qubits),3,Hungarian (Exact),66.71,66.71,1.0,True,1.0,1.0,4e-05
+15,3x3 (9 qubits),3,Nearest-Vehicle Greedy,67.47,66.71,1.0114,True,0.0,1.0,4e-05
 15,3x3 (9 qubits),3,Severity-First Greedy,67.47,66.71,1.0114,True,0.0,1.0,5e-05
-15,3x3 (9 qubits),3,Simulated Annealing (QUBO),66.71,66.71,1.0,True,1.0,1.0,0.1087
-16,3x3 (9 qubits),3,Hungarian (Exact),171.79,171.79,1.0,True,1.0,1.0,3e-05
-16,3x3 (9 qubits),3,Nearest-Vehicle Greedy,280.09,171.79,1.6304,True,0.0,1.0,4e-05
-16,3x3 (9 qubits),3,Severity-First Greedy,172.91,171.79,1.0065,True,0.0,1.0,5e-05
-16,3x3 (9 qubits),3,Simulated Annealing (QUBO),280.09,171.79,1.6304,True,0.0,1.0,0.1123
+15,3x3 (9 qubits),3,Simulated Annealing (QUBO),66.71,66.71,1.0,True,1.0,1.0,0.0807
+15,3x3 (9 qubits),3,QAOA (p=1),66.71,66.71,1.0,True,0.00025,0.08768,0.3069
+15,3x3 (9 qubits),3,QAOA (p=2),96.59,66.71,1.4479,True,0.00016,0.01127,0.8288
+15,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",96.59,66.71,1.4479,True,3e-05,0.04266,0.6976
+16,3x3 (9 qubits),3,Hungarian (Exact),171.79,171.79,1.0,True,1.0,1.0,2e-05
+16,3x3 (9 qubits),3,Nearest-Vehicle Greedy,280.09,171.79,1.6304,True,0.0,1.0,3e-05
+16,3x3 (9 qubits),3,Severity-First Greedy,172.91,171.79,1.0065,True,0.0,1.0,4e-05
+16,3x3 (9 qubits),3,Simulated Annealing (QUBO),280.09,171.79,1.6304,True,0.0,1.0,0.0827
+16,3x3 (9 qubits),3,QAOA (p=1),172.91,171.79,1.0065,True,8e-05,0.01257,0.3325
+16,3x3 (9 qubits),3,QAOA (p=2),172.91,171.79,1.0065,True,6e-05,0.00832,0.7347
+16,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",171.79,171.79,1.0,True,0.0018,0.04767,0.6564
 17,3x3 (9 qubits),3,Hungarian (Exact),29.320000000000004,29.320000000000004,1.0,True,1.0,1.0,3e-05
 17,3x3 (9 qubits),3,Nearest-Vehicle Greedy,29.32,29.320000000000004,1.0,True,1.0,1.0,4e-05
-17,3x3 (9 qubits),3,Severity-First Greedy,29.32,29.320000000000004,1.0,True,1.0,1.0,5e-05
-17,3x3 (9 qubits),3,Simulated Annealing (QUBO),29.32,29.320000000000004,1.0,True,1.0,1.0,0.1427
-18,3x3 (9 qubits),3,Hungarian (Exact),90.77999999999999,90.77999999999999,1.0,True,1.0,1.0,3e-05
-18,3x3 (9 qubits),3,Nearest-Vehicle Greedy,90.78,90.77999999999999,1.0,True,1.0,1.0,4e-05
-18,3x3 (9 qubits),3,Severity-First Greedy,91.28,90.77999999999999,1.0055,True,0.0,1.0,6e-05
-18,3x3 (9 qubits),3,Simulated Annealing (QUBO),90.78,90.77999999999999,1.0,True,1.0,1.0,0.1258
-19,3x3 (9 qubits),3,Hungarian (Exact),59.160000000000004,59.160000000000004,1.0,True,1.0,1.0,3e-05
-19,3x3 (9 qubits),3,Nearest-Vehicle Greedy,71.33,59.160000000000004,1.2057,True,0.0,1.0,4e-05
-19,3x3 (9 qubits),3,Severity-First Greedy,59.16,59.160000000000004,1.0,True,1.0,1.0,5e-05
-19,3x3 (9 qubits),3,Simulated Annealing (QUBO),59.16,59.160000000000004,1.0,True,1.0,1.0,0.1119
-20,3x3 (9 qubits),3,Hungarian (Exact),57.879999999999995,57.879999999999995,1.0,True,1.0,1.0,3e-05
+17,3x3 (9 qubits),3,Severity-First Greedy,29.32,29.320000000000004,1.0,True,1.0,1.0,4e-05
+17,3x3 (9 qubits),3,Simulated Annealing (QUBO),29.32,29.320000000000004,1.0,True,1.0,1.0,0.0832
+17,3x3 (9 qubits),3,QAOA (p=1),29.32,29.320000000000004,1.0,True,0.00029,0.02526,0.4847
+17,3x3 (9 qubits),3,QAOA (p=2),29.32,29.320000000000004,1.0,True,0.00558,0.01302,0.7413
+17,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",29.32,29.320000000000004,1.0,True,0.00736,0.03541,0.6774
+18,3x3 (9 qubits),3,Hungarian (Exact),90.77999999999999,90.77999999999999,1.0,True,1.0,1.0,2e-05
+18,3x3 (9 qubits),3,Nearest-Vehicle Greedy,90.78,90.77999999999999,1.0,True,1.0,1.0,3e-05
+18,3x3 (9 qubits),3,Severity-First Greedy,91.28,90.77999999999999,1.0055,True,0.0,1.0,3e-05
+18,3x3 (9 qubits),3,Simulated Annealing (QUBO),90.78,90.77999999999999,1.0,True,1.0,1.0,0.0755
+18,3x3 (9 qubits),3,QAOA (p=1),91.0,90.77999999999999,1.0024,True,1e-05,0.00942,0.3214
+18,3x3 (9 qubits),3,QAOA (p=2),90.78,90.77999999999999,1.0,True,0.00023,0.03209,0.8459
+18,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",90.78,90.77999999999999,1.0,True,0.00687,0.04159,0.9236
+19,3x3 (9 qubits),3,Hungarian (Exact),59.160000000000004,59.160000000000004,1.0,True,1.0,1.0,2e-05
+19,3x3 (9 qubits),3,Nearest-Vehicle Greedy,71.33,59.160000000000004,1.2057,True,0.0,1.0,3e-05
+19,3x3 (9 qubits),3,Severity-First Greedy,59.16,59.160000000000004,1.0,True,1.0,1.0,4e-05
+19,3x3 (9 qubits),3,Simulated Annealing (QUBO),59.16,59.160000000000004,1.0,True,1.0,1.0,0.0767
+19,3x3 (9 qubits),3,QAOA (p=1),59.16,59.160000000000004,1.0,True,0.00022,0.03338,0.3042
+19,3x3 (9 qubits),3,QAOA (p=2),59.16,59.160000000000004,1.0,True,0.00046,0.04037,0.7524
+19,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",59.16,59.160000000000004,1.0,True,0.00914,0.01304,0.7399
+20,3x3 (9 qubits),3,Hungarian (Exact),57.879999999999995,57.879999999999995,1.0,True,1.0,1.0,2e-05
 20,3x3 (9 qubits),3,Nearest-Vehicle Greedy,57.88,57.879999999999995,1.0,True,1.0,1.0,4e-05
 20,3x3 (9 qubits),3,Severity-First Greedy,57.88,57.879999999999995,1.0,True,1.0,1.0,5e-05
-20,3x3 (9 qubits),3,Simulated Annealing (QUBO),99.88,57.879999999999995,1.7256,True,0.0,1.0,0.1117
-21,3x3 (9 qubits),3,Hungarian (Exact),108.8,108.8,1.0,True,1.0,1.0,0.00029
-21,3x3 (9 qubits),3,Nearest-Vehicle Greedy,171.9,108.8,1.58,True,0.0,1.0,8e-05
-21,3x3 (9 qubits),3,Severity-First Greedy,108.8,108.8,1.0,True,1.0,1.0,9e-05
-21,3x3 (9 qubits),3,Simulated Annealing (QUBO),115.08,108.8,1.0577,True,0.0,1.0,0.1207
-22,3x3 (9 qubits),3,Hungarian (Exact),52.900000000000006,52.900000000000006,1.0,True,1.0,1.0,3e-05
-22,3x3 (9 qubits),3,Nearest-Vehicle Greedy,52.9,52.900000000000006,1.0,True,1.0,1.0,4e-05
-22,3x3 (9 qubits),3,Severity-First Greedy,52.9,52.900000000000006,1.0,True,1.0,1.0,5e-05
-22,3x3 (9 qubits),3,Simulated Annealing (QUBO),68.32,52.900000000000006,1.2915,True,0.0,1.0,0.1292
-23,3x3 (9 qubits),3,Hungarian (Exact),137.62,137.62,1.0,True,1.0,1.0,3e-05
-23,3x3 (9 qubits),3,Nearest-Vehicle Greedy,137.62,137.62,1.0,True,1.0,1.0,4e-05
-23,3x3 (9 qubits),3,Severity-First Greedy,137.62,137.62,1.0,True,1.0,1.0,5e-05
-23,3x3 (9 qubits),3,Simulated Annealing (QUBO),137.62,137.62,1.0,True,1.0,1.0,0.1133
-24,3x3 (9 qubits),3,Hungarian (Exact),216.0,216.0,1.0,True,1.0,1.0,3e-05
-24,3x3 (9 qubits),3,Nearest-Vehicle Greedy,217.68,216.0,1.0078,True,0.0,1.0,4e-05
-24,3x3 (9 qubits),3,Severity-First Greedy,216.0,216.0,1.0,True,1.0,1.0,5e-05
-24,3x3 (9 qubits),3,Simulated Annealing (QUBO),220.48,216.0,1.0207,True,0.0,1.0,0.1092
-25,3x3 (9 qubits),3,Hungarian (Exact),26.35,26.35,1.0,True,1.0,1.0,3e-05
+20,3x3 (9 qubits),3,Simulated Annealing (QUBO),99.88,57.879999999999995,1.7256,True,0.0,1.0,0.0824
+20,3x3 (9 qubits),3,QAOA (p=1),57.88,57.879999999999995,1.0,True,0.00072,0.01093,0.3172
+20,3x3 (9 qubits),3,QAOA (p=2),99.88,57.879999999999995,1.7256,True,1e-05,0.02691,0.8227
+20,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",57.88,57.879999999999995,1.0,True,0.00134,0.03368,0.6952
+21,3x3 (9 qubits),3,Hungarian (Exact),108.8,108.8,1.0,True,1.0,1.0,2e-05
+21,3x3 (9 qubits),3,Nearest-Vehicle Greedy,171.9,108.8,1.58,True,0.0,1.0,3e-05
+21,3x3 (9 qubits),3,Severity-First Greedy,108.8,108.8,1.0,True,1.0,1.0,4e-05
+21,3x3 (9 qubits),3,Simulated Annealing (QUBO),115.08,108.8,1.0577,True,0.0,1.0,0.0764
+21,3x3 (9 qubits),3,QAOA (p=1),108.8,108.8,1.0,True,0.00541,0.07491,0.3095
+21,3x3 (9 qubits),3,QAOA (p=2),108.8,108.8,1.0,True,0.00062,0.04444,0.6893
+21,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",108.8,108.8,1.0,True,0.01703,0.06301,0.7884
+22,3x3 (9 qubits),3,Hungarian (Exact),52.900000000000006,52.900000000000006,1.0,True,1.0,1.0,2e-05
+22,3x3 (9 qubits),3,Nearest-Vehicle Greedy,52.9,52.900000000000006,1.0,True,1.0,1.0,3e-05
+22,3x3 (9 qubits),3,Severity-First Greedy,52.9,52.900000000000006,1.0,True,1.0,1.0,3e-05
+22,3x3 (9 qubits),3,Simulated Annealing (QUBO),68.32,52.900000000000006,1.2915,True,0.0,1.0,0.0782
+22,3x3 (9 qubits),3,QAOA (p=1),52.9,52.900000000000006,1.0,True,0.00025,0.01256,0.3855
+22,3x3 (9 qubits),3,QAOA (p=2),68.32,52.900000000000006,1.2915,True,0.00022,0.04386,0.6849
+22,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",52.9,52.900000000000006,1.0,True,0.01096,0.06493,0.7971
+23,3x3 (9 qubits),3,Hungarian (Exact),137.62,137.62,1.0,True,1.0,1.0,2e-05
+23,3x3 (9 qubits),3,Nearest-Vehicle Greedy,137.62,137.62,1.0,True,1.0,1.0,3e-05
+23,3x3 (9 qubits),3,Severity-First Greedy,137.62,137.62,1.0,True,1.0,1.0,3e-05
+23,3x3 (9 qubits),3,Simulated Annealing (QUBO),137.62,137.62,1.0,True,1.0,1.0,0.0811
+23,3x3 (9 qubits),3,QAOA (p=1),137.62,137.62,1.0,True,0.00021,0.02522,0.3535
+23,3x3 (9 qubits),3,QAOA (p=2),144.08,137.62,1.0469,True,0.00037,0.02286,0.7769
+23,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",137.62,137.62,1.0,True,0.04225,0.1096,0.8896
+24,3x3 (9 qubits),3,Hungarian (Exact),216.0,216.0,1.0,True,1.0,1.0,2e-05
+24,3x3 (9 qubits),3,Nearest-Vehicle Greedy,217.68,216.0,1.0078,True,0.0,1.0,3e-05
+24,3x3 (9 qubits),3,Severity-First Greedy,216.0,216.0,1.0,True,1.0,1.0,3e-05
+24,3x3 (9 qubits),3,Simulated Annealing (QUBO),220.48,216.0,1.0207,True,0.0,1.0,0.0819
+24,3x3 (9 qubits),3,QAOA (p=1),220.48,216.0,1.0207,True,3e-05,0.02317,0.3086
+24,3x3 (9 qubits),3,QAOA (p=2),216.0,216.0,1.0,True,0.01428,0.07992,0.7628
+24,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",216.0,216.0,1.0,True,0.00035,0.12511,0.7476
+25,3x3 (9 qubits),3,Hungarian (Exact),26.35,26.35,1.0,True,1.0,1.0,2e-05
 25,3x3 (9 qubits),3,Nearest-Vehicle Greedy,26.35,26.35,1.0,True,1.0,1.0,4e-05
-25,3x3 (9 qubits),3,Severity-First Greedy,26.63,26.35,1.0106,True,0.0,1.0,0.00013
-25,3x3 (9 qubits),3,Simulated Annealing (QUBO),26.63,26.35,1.0106,True,0.0,1.0,0.1119
-26,3x3 (9 qubits),3,Hungarian (Exact),25.08,25.08,1.0,True,1.0,1.0,3e-05
-26,3x3 (9 qubits),3,Nearest-Vehicle Greedy,25.49,25.08,1.0163,True,0.0,1.0,4e-05
-26,3x3 (9 qubits),3,Severity-First Greedy,25.49,25.08,1.0163,True,0.0,1.0,4e-05
-26,3x3 (9 qubits),3,Simulated Annealing (QUBO),25.08,25.08,1.0,True,1.0,1.0,0.1164
+25,3x3 (9 qubits),3,Severity-First Greedy,26.63,26.35,1.0106,True,0.0,1.0,5e-05
+25,3x3 (9 qubits),3,Simulated Annealing (QUBO),26.63,26.35,1.0106,True,0.0,1.0,0.0857
+25,3x3 (9 qubits),3,QAOA (p=1),26.35,26.35,1.0,True,0.00225,0.02643,0.4675
+25,3x3 (9 qubits),3,QAOA (p=2),26.35,26.35,1.0,True,0.00033,0.05593,1.0132
+25,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",26.35,26.35,1.0,True,0.00039,0.0492,0.7415
+26,3x3 (9 qubits),3,Hungarian (Exact),25.08,25.08,1.0,True,1.0,1.0,2e-05
+26,3x3 (9 qubits),3,Nearest-Vehicle Greedy,25.49,25.08,1.0163,True,0.0,1.0,3e-05
+26,3x3 (9 qubits),3,Severity-First Greedy,25.49,25.08,1.0163,True,0.0,1.0,3e-05
+26,3x3 (9 qubits),3,Simulated Annealing (QUBO),25.08,25.08,1.0,True,1.0,1.0,0.0818
+26,3x3 (9 qubits),3,QAOA (p=1),25.08,25.08,1.0,True,0.00183,0.03357,0.33
+26,3x3 (9 qubits),3,QAOA (p=2),25.08,25.08,1.0,True,0.02012,0.11578,0.9869
+26,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",25.08,25.08,1.0,True,0.00674,0.04894,0.9681
 27,3x3 (9 qubits),3,Hungarian (Exact),152.68,152.68,1.0,True,1.0,1.0,3e-05
-27,3x3 (9 qubits),3,Nearest-Vehicle Greedy,152.68,152.68,1.0,True,1.0,1.0,4e-05
-27,3x3 (9 qubits),3,Severity-First Greedy,152.68,152.68,1.0,True,1.0,1.0,5e-05
-27,3x3 (9 qubits),3,Simulated Annealing (QUBO),152.68,152.68,1.0,True,1.0,1.0,0.1138
+27,3x3 (9 qubits),3,Nearest-Vehicle Greedy,152.68,152.68,1.0,True,1.0,1.0,5e-05
+27,3x3 (9 qubits),3,Severity-First Greedy,152.68,152.68,1.0,True,1.0,1.0,4e-05
+27,3x3 (9 qubits),3,Simulated Annealing (QUBO),152.68,152.68,1.0,True,1.0,1.0,0.0789
+27,3x3 (9 qubits),3,QAOA (p=1),152.68,152.68,1.0,True,0.00424,0.01641,0.2956
+27,3x3 (9 qubits),3,QAOA (p=2),152.68,152.68,1.0,True,0.01464,0.02144,0.736
+27,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",152.68,152.68,1.0,True,0.02,0.07172,0.655
 28,3x3 (9 qubits),3,Hungarian (Exact),44.2,44.2,1.0,True,1.0,1.0,3e-05
-28,3x3 (9 qubits),3,Nearest-Vehicle Greedy,60.78,44.2,1.3751,True,0.0,1.0,6e-05
+28,3x3 (9 qubits),3,Nearest-Vehicle Greedy,60.78,44.2,1.3751,True,0.0,1.0,5e-05
 28,3x3 (9 qubits),3,Severity-First Greedy,44.2,44.2,1.0,True,1.0,1.0,6e-05
-28,3x3 (9 qubits),3,Simulated Annealing (QUBO),44.2,44.2,1.0,True,1.0,1.0,0.1167
-29,3x3 (9 qubits),3,Hungarian (Exact),153.12,153.12,1.0,True,1.0,1.0,3e-05
-29,3x3 (9 qubits),3,Nearest-Vehicle Greedy,153.12,153.12,1.0,True,1.0,1.0,4e-05
-29,3x3 (9 qubits),3,Severity-First Greedy,153.12,153.12,1.0,True,1.0,1.0,5e-05
-29,3x3 (9 qubits),3,Simulated Annealing (QUBO),177.66,153.12,1.1603,True,0.0,1.0,0.1072
-0,4x4 (16 qubits),4,Hungarian (Exact),26.12,26.12,1.0,True,1.0,1.0,3e-05
-0,4x4 (16 qubits),4,Nearest-Vehicle Greedy,26.12,26.12,1.0,True,1.0,1.0,5e-05
+28,3x3 (9 qubits),3,Simulated Annealing (QUBO),44.2,44.2,1.0,True,1.0,1.0,0.0808
+28,3x3 (9 qubits),3,QAOA (p=1),44.2,44.2,1.0,True,0.00115,0.01888,0.2937
+28,3x3 (9 qubits),3,QAOA (p=2),44.2,44.2,1.0,True,0.00064,0.03917,0.8127
+28,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",60.78,44.2,1.3751,True,0.0,0.13744,0.7638
+29,3x3 (9 qubits),3,Hungarian (Exact),153.12,153.12,1.0,True,1.0,1.0,2e-05
+29,3x3 (9 qubits),3,Nearest-Vehicle Greedy,153.12,153.12,1.0,True,1.0,1.0,3e-05
+29,3x3 (9 qubits),3,Severity-First Greedy,153.12,153.12,1.0,True,1.0,1.0,3e-05
+29,3x3 (9 qubits),3,Simulated Annealing (QUBO),177.66,153.12,1.1603,True,0.0,1.0,0.0765
+29,3x3 (9 qubits),3,QAOA (p=1),153.12,153.12,1.0,True,0.00045,0.01464,0.3257
+29,3x3 (9 qubits),3,QAOA (p=2),153.12,153.12,1.0,True,0.00163,0.06479,0.8239
+29,3x3 (9 qubits),3,"CVaR-QAOA (p=2, a=0.2)",153.12,153.12,1.0,True,0.00076,0.10378,0.7717
+0,4x4 (16 qubits),4,Hungarian (Exact),26.12,26.12,1.0,True,1.0,1.0,2e-05
+0,4x4 (16 qubits),4,Nearest-Vehicle Greedy,26.12,26.12,1.0,True,1.0,1.0,4e-05
 0,4x4 (16 qubits),4,Severity-First Greedy,26.12,26.12,1.0,True,1.0,1.0,5e-05
-0,4x4 (16 qubits),4,Simulated Annealing (QUBO),32.15,26.12,1.2309,True,0.0,1.0,0.1005
-1,4x4 (16 qubits),4,Hungarian (Exact),177.57999999999998,177.57999999999998,1.0,True,1.0,1.0,3e-05
+0,4x4 (16 qubits),4,Simulated Annealing (QUBO),32.15,26.12,1.2309,True,0.0,1.0,0.0803
+0,4x4 (16 qubits),4,QAOA (p=1),32.15,26.12,1.2309,True,0.00012,0.00138,9.1679
+1,4x4 (16 qubits),4,Hungarian (Exact),177.57999999999998,177.57999999999998,1.0,True,1.0,1.0,2e-05
 1,4x4 (16 qubits),4,Nearest-Vehicle Greedy,232.4,177.57999999999998,1.3087,True,0.0,1.0,4e-05
 1,4x4 (16 qubits),4,Severity-First Greedy,177.58,177.57999999999998,1.0,True,1.0,1.0,4e-05
-1,4x4 (16 qubits),4,Simulated Annealing (QUBO),187.02,177.57999999999998,1.0532,True,0.0,1.0,0.0948
+1,4x4 (16 qubits),4,Simulated Annealing (QUBO),187.02,177.57999999999998,1.0532,True,0.0,1.0,0.0787
+1,4x4 (16 qubits),4,QAOA (p=1),186.08,177.57999999999998,1.0479,True,2e-05,0.00219,8.5587
 2,4x4 (16 qubits),4,Hungarian (Exact),50.78,50.78,1.0,True,1.0,1.0,3e-05
 2,4x4 (16 qubits),4,Nearest-Vehicle Greedy,51.78,50.78,1.0197,True,0.0,1.0,5e-05
-2,4x4 (16 qubits),4,Severity-First Greedy,50.78,50.78,1.0,True,1.0,1.0,4e-05
-2,4x4 (16 qubits),4,Simulated Annealing (QUBO),55.86,50.78,1.1,True,0.0,1.0,0.0879
-3,4x4 (16 qubits),4,Hungarian (Exact),101.72,101.72,1.0,True,1.0,1.0,4e-05
-3,4x4 (16 qubits),4,Nearest-Vehicle Greedy,125.68,101.72,1.2355,True,0.0,1.0,7e-05
-3,4x4 (16 qubits),4,Severity-First Greedy,101.72,101.72,1.0,True,1.0,1.0,0.00014
-3,4x4 (16 qubits),4,Simulated Annealing (QUBO),101.88,101.72,1.0016,True,0.0,1.0,0.0881
-4,4x4 (16 qubits),4,Hungarian (Exact),62.46,62.46,1.0,True,1.0,1.0,2e-05
+2,4x4 (16 qubits),4,Severity-First Greedy,50.78,50.78,1.0,True,1.0,1.0,5e-05
+2,4x4 (16 qubits),4,Simulated Annealing (QUBO),55.86,50.78,1.1,True,0.0,1.0,0.0787
+2,4x4 (16 qubits),4,QAOA (p=1),51.76,50.78,1.0193,True,8e-05,0.0038,10.1166
+3,4x4 (16 qubits),4,Hungarian (Exact),101.72,101.72,1.0,True,1.0,1.0,2e-05
+3,4x4 (16 qubits),4,Nearest-Vehicle Greedy,125.68,101.72,1.2355,True,0.0,1.0,4e-05
+3,4x4 (16 qubits),4,Severity-First Greedy,101.72,101.72,1.0,True,1.0,1.0,4e-05
+3,4x4 (16 qubits),4,Simulated Annealing (QUBO),101.88,101.72,1.0016,True,0.0,1.0,0.0754
+4,4x4 (16 qubits),4,Hungarian (Exact),62.46,62.46,1.0,True,1.0,1.0,3e-05
 4,4x4 (16 qubits),4,Nearest-Vehicle Greedy,107.15,62.46,1.7155,True,0.0,1.0,4e-05
 4,4x4 (16 qubits),4,Severity-First Greedy,62.46,62.46,1.0,True,1.0,1.0,4e-05
-4,4x4 (16 qubits),4,Simulated Annealing (QUBO),77.35,62.46,1.2384,True,0.0,1.0,0.0813
+4,4x4 (16 qubits),4,Simulated Annealing (QUBO),77.35,62.46,1.2384,True,0.0,1.0,0.0747
