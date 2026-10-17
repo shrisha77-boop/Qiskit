@@ -93,6 +93,7 @@ def solve_brute_force_qubo(
                 
     return {
         "best_energy": round(best_energy, 4),
+        "min_energy": round(best_energy, 4),
         "best_bitstring": best_bitstring,
         "is_feasible": is_opt_feasible,
         "best_feasible_energy": round(best_feasible_energy, 4) if best_feasible_bitstring is not None else None,
